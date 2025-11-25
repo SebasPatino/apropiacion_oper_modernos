@@ -7,7 +7,8 @@ const ventas = [
 function calcularTotal(ventas) {
     // Destructuración anidada: accedemos directamente a precio y unidades
     const [{ detalles: { precio, unidades } }] = ventas;
-
+    console.log("Precio:", precio, "Unidades:", unidades);
+    
     // Retornamos el total vendido (precio × unidades)
     return precio * unidades;
 }
